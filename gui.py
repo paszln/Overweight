@@ -10,11 +10,13 @@ def on_click():
     num_bmi = float("%.2f"%cal_bmi)
     least_weight = 18.5 * use_height
     normal_weight = 24.9 * use_height
+    bmi_result.set(num_bmi)
     if num_bmi < 18.5:
         bmi_range.set("You are in the underweight range.")
         you_should.set("You should weigh between %.2f and %.2f."%(least_weight, normal_weight))
     elif 18.5 <= num_bmi <= 24.9:
         bmi_range.set("You are in the Normal weight range.")
+        you_should.set("")
     elif 25 <= num_bmi <= 29.9:
         bmi_range.set("You are in the Overweight range.")
         you_should.set("You should weigh between %.2f and %.2f."%(least_weight, normal_weight))
