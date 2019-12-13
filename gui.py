@@ -186,7 +186,7 @@ Label(root, text = "(cm)").grid(row = 1, column = 2)
 Label(root, text = "น้ำหนัก(Weight)").grid(row = 2, column = 0)
 Entry(root, textvariable = tv_weight).grid(row = 2, column = 1) #ใส่น้ำหนัก
 Label(root, text = "(kg)").grid(row = 2, column = 2)
-Button(root, text = "Calculate BMI", font = "20", command = on_click).grid(row = 3, column = 0)
+Button(root, text = "Calculate BMI", fg="green", bd=6, font = "20", command = on_click).grid(row = 3, column = 0)
 Label(root, text = "Your BMI").grid(row = 1, column = 3)
 Label(root, textvariable = bmi_result).grid(row = 2, column = 3) #ผลbmi
 Label(root, textvariable = bmi_range).grid(row = 3, column = 3) #bmi range
@@ -204,10 +204,10 @@ Label(root, text = "สะโพก(Hip)").grid(row = 7, column = 0)
 Entry(root, textvariable = tv_hip, width = 6).grid(row = 7, column = 1)
 Label(root, text = "หน้าอก(Chest)").grid(row = 8, column = 0)
 Entry(root, textvariable = tv_chest, width = 6).grid(row = 8, column = 1)
-Button(root, text = "Set First Day", font = "20", command = on_click2).grid(row = 9, column = 1)
-Button(root, text = "Submit Body Measurements", font = "20", command = on_click3).grid(row = 10, column = 1)
-Button(root, text = "Compare with First day", font = "20", command = on_click4).grid(row = 11, column = 1)
-Button(root, text = "Compare with Last Submit", font = "20", command = on_click5).grid(row = 12, column = 1)
+Button(root, text = "Set First Day", fg="orange", bd=7, font = "20", command = on_click2).grid(row = 9, column = 1)
+Button(root, text = "Submit Body Measurements", fg="red", bd=6, font = "20", command = on_click3).grid(row = 10, column = 1)
+Button(root, text = "Compare with First day", fg="blue", bd=6, font = "20", command = on_click4).grid(row = 11, column = 1)
+Button(root, text = "Compare with Last Submit", fg="blue", bd=6, font = "20", command = on_click5).grid(row = 12, column = 1)
 
 "ต้นแขน ต้นขา เอว สะโพก หน้าอก"
 # var = StringVar()
@@ -216,4 +216,3 @@ Button(root, text = "Compare with Last Submit", font = "20", command = on_click5
 # var.set("Hey!? How are you doing?")
 # label.pack()
 root.mainloop()
-
