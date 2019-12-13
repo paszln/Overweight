@@ -178,7 +178,7 @@ tv_chest = DoubleVar()
 
 
 """ช่วงคำนวณBMI"""
-root.title("BMI")
+root.title("OVERWEIGHT")
 Label(root, text = "BMI Calculator").grid()
 Label(root, text = "ส่วนสูง(Height)").grid(row = 1, column = 0)
 Entry(root, textvariable = tv_height).grid(row = 1, column = 1) #ใส่ส่วนสูง
@@ -187,7 +187,7 @@ Label(root, text = "น้ำหนัก(Weight)").grid(row = 2, column = 0)
 Entry(root, textvariable = tv_weight).grid(row = 2, column = 1) #ใส่น้ำหนัก
 Label(root, text = "(kg)").grid(row = 2, column = 2)
 Button(root, text = "Calculate BMI", fg="green", bd=6, font = "20", command = on_click).grid(row = 3, column = 0)
-Label(root, text = "Your BMI").grid(row = 1, column = 3)
+Label(root, text = "Your BMI", font = "20").grid(row = 1, column = 3)
 Label(root, textvariable = bmi_result).grid(row = 2, column = 3) #ผลbmi
 Label(root, textvariable = bmi_range).grid(row = 3, column = 3) #bmi range
 Label(root, textvariable = you_should).grid(row = 3, column = 4) #น้ำหนักที่ควรได้
